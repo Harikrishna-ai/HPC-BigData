@@ -1,0 +1,9 @@
+we have 25000 data points to read
+range 20.000000: from -10.000000 to 10.000000
+normalise: 9.31323e-09
+RAND_MAX: 2147483647
+25000 data points read [18.529377 sec]
+Stats:
+Min: 0.000597 Max: 9.999855 Mean: -0.001371 Std: 5.784907
+Eigenvalue: 127425.006948 (46 iterations)
+Total time: 180.903074

@@ -1,0 +1,33 @@
+Copilot Version:
+GitHub Copilot: vX.X.X
+GitHub Copilot Chat: vX.X.X
+GitHub Copilot Prompt Log
+
+Prompt 1:
+I have a serial C program that calculates statistics and the dominant eigenvalue of a matrix using power iteration. Convert this into an MPI version where rank 0 reads the data and broadcasts it to all processes.
+
+Response:
+Copilot generated an MPI version using MPI_Init, MPI_Comm_rank, MPI_Comm_size, and MPI_Bcast to share data across processes.
+
+---
+
+Prompt 2:
+Distribute the computation of vector operations and matrix-vector multiplication across multiple processes.
+
+Response:
+Copilot suggested splitting loops using rank and size (i += size pattern) so each process handles part of the computation.
+
+---
+
+Prompt 3:
+Fix communication issues in the MPI implementation.
+
+Response:
+The initial code used MPI_Allgather incorrectly. I identified that this was not appropriate for combining results and replaced it with MPI_Allreduce to correctly compute global values such as sums and maximums.
+
+---
+
+Notes:
+The first version compiled but required fixing communication logic.
+After replacing MPI_Allgather with MPI_Allreduce, the program produced correct results matching the OpenMP implementation.
+

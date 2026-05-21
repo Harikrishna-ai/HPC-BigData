@@ -1,0 +1,16 @@
+we have 25000 data points to read
+There are allegedly 25000 data points to read
+range 20.000000: from -10.000000 to 10.000000
+normalise: 9.31323e-09
+RAND_MAX: 2147483647
+25000 data points successfully read [9.957873 seconds]
+x[0]=6.803754
+Time for vector stats: 0.000451 seconds
+calculating eigenvalue to tolerance 0.010000
+Time for eigen stats: 271.439781 seconds
+Total stats wallclock time [271.440243 seconds]
+Stats table
+Min abs val	Max abs val	Mean		Std Dev
+0.000597	 9.999855	 -0.001371		 5.784907
+Eigen value of matrix: 127425.006948 (46 iterations)
+Completed (read+stats). [281.398193 seconds]
